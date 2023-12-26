@@ -1,6 +1,5 @@
 from flask import Flask, jsonify
 from flask import request
-import requests
 import threading
 
 import re
@@ -250,8 +249,6 @@ def tree_to_code(tree, feature_names):
     getSeverityDict()
     getDescription()
     getprecautionDict()
-    # tree_to_code(clf,cols)            
-
 
 app = Flask(__name__)
 
