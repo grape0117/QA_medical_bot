@@ -6,7 +6,6 @@ import re
 import pandas as pd
 from sklearn import preprocessing
 from sklearn.tree import DecisionTreeClassifier,_tree
-import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import cross_val_score
 from sklearn.svm import SVC
@@ -50,10 +49,6 @@ print (scores.mean())
 
 model=SVC()
 model.fit(x_train,y_train)
-
-importances = clf.feature_importances_
-indices = np.argsort(importances)[::-1]
-features = cols
 
 severityDictionary=dict()
 description_list = dict()
