@@ -4,7 +4,6 @@ import threading
 
 import re
 import pandas as pd
-import pyttsx3
 from sklearn import preprocessing
 from sklearn.tree import DecisionTreeClassifier,_tree
 import numpy as np
